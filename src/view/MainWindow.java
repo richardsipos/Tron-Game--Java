@@ -27,7 +27,6 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.Timer;
 import javax.swing.WindowConstants;
-import res.ResourceLoader;
 import model.Direction;
 import model.Game;
 import model.GameID;
@@ -158,12 +157,15 @@ public class MainWindow extends JFrame{
         menuBar.add(menuGame);
         setJMenuBar(menuBar);
         
+        
+        
         setLayout(new BorderLayout(0, 10));
         gameStatLabel = new JLabel("label");
         
 
         add(gameStatLabel, BorderLayout.NORTH);
         try { add(board = new Board(game), BorderLayout.CENTER); } catch (IOException ex) {}
+        
         
         
         addKeyListener(new KeyAdapter() {
@@ -206,6 +208,11 @@ public class MainWindow extends JFrame{
         board.refresh();
         pack();
 
+//        menuBar.addActionListener(new ActionListener() {
+//            System.out.println("Clicked");
+//        });
+        
+        
         leaderBoardButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -624,24 +631,5 @@ public class MainWindow extends JFrame{
             
             
         }
-      }; 
-    
-    /**
-     * The main program.
-     * @param args
-     * @throws ClassNotFoundException
-     * @throws SQLException 
-     */
-    public static void main(String[] args) throws ClassNotFoundException, SQLException{
-        try {
-            MainWindow mainWindow = new MainWindow();
-            
-                        
-        } catch (IOException ex) {}
-    }    
+     }; 
 }
-
-
-
-
-

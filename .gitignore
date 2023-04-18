@@ -1,4 +1,4 @@
-# NetBeans specific
+# NetBeans specific #
 nbproject/private/
 build/
 nbbuild/
@@ -6,36 +6,11 @@ dist/
 nbdist/
 nbactions.xml
 nb-configuration.xml
-nb-gradle.properties
-nb-gradle.xml
 
-# Compiled files
+# Class Files #
 *.class
 
-# Logs and databases
-*.log
-*.db
-*.derby
-
-# IDE-specific files
-.DS_Store
-.idea/
-*.iml
-*.iws
-*.ipr
-*.opensdf
-*.suo
-*.user
-*.~nb
-
-# Maven specific
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
+# Package Files #
+*.jar
+*.war
+*.ear
